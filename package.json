@@ -1,0 +1,19 @@
+{
+  "name": "servidor_basico2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "node --watch --env-file=.env index.js"
+  },
+  "author": "Bobadilla Jesus Manuel",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.7.9",
+    "cors": "^2.8.5",
+    "express": "^5.0.1",
+    "helmet": "^8.0.0",
+    "morgan": "^1.10.0"
+  }
+}
