@@ -1,8 +1,6 @@
-import { styleText } from 'node:util';
-
 class index_controller {
-    index = ( req, res ) => {
-        console.log( `Recibiendo peticiones[${req.method}] del url: ${ styleText('bgBlue', req.url) }` );        
+    getIndex = ( req, res ) => {
+        console.log( `Servidor recibiendo peticiones :D` );        
     }
 }
 

@@ -1,11 +1,13 @@
 import app from './src/config/express.js'
-import index_controller from './src/controllers/index.controller.js'
+import index_router from './src/routes/index.routes.js';
+import home_router from './src/routes/home.routes.js';
 import { styleText } from 'node:util';
 
 const PORT = process.env.PORT;
 const HOST = process.env.HOST;
 
-app.get( '/', index_controller.index )
+app.use( '/', index_router );
+app.use( '/home', home_router );
 
 app.listen( PORT, HOST, (  ) => {
     console.log( `Servidor escuhando en: ${styleText( 'bgBlue', `http://${HOST}:${PORT}` )}` );
